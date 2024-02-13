@@ -15,3 +15,15 @@
   - Equation only: Instead of full chain of thought, only output math equation used to arrive at answer. Not as good still, so something about the use of natural language matters.
   - Variable compute only: asking model to come up with equation makes it spend more compution/intermediate-tokens on harder problems. So just ask it to output dots for each character in the equation. Still performs similar to baseline.
   - Chain of thought after the answer: Still worse, so something about using the chain of thought as part of arriving at the answer matters.
+
+Language models are Few Shot Learners:
+
+- Models
+	- RD7 Paper: LaMDA 400m, 8b, 137b; GPT 400m, 7b, 175b; PaLM 8b, 62b, 540b; UL2 20B; Codex.
+		- No fine-tuning, all ICL.
+	- OG Paper: 8 GPT models from param count of 125m - 175b.
+		- Performed fine-tuning on a subset of CommonCrawl.
+	- Both use different benchmarks for performance
+	- Essentially what's new here is the researchers for the chain-of-though paper enhance the example provided in the few-shot prompting case to push the model to perform additional natural language computation on building a chain of thought before arriving at an answer.
+	- Through ablation studies, the researchers showed that it isn't just providing examples, or pushing the language model to spend more intermediate tokens in its computation, that improves performance.
+		- The OG paper (few shot learners) showed that providing examples improves performance; the new paper shows that there is some emergent property that allows large language models to form some kind of logical reasoning by generating chains of thought in building an answer, improving performance.
