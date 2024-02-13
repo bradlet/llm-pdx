@@ -23,6 +23,7 @@ Language models are Few Shot Learners:
 		- No fine-tuning, all ICL.
 	- OG Paper: 8 GPT models from param count of 125m - 175b.
 		- Performed fine-tuning on a subset of CommonCrawl.
+		- Provided varying counts of examples when prompting the models (a'la "Simple prompting" in the chain of thought paper).
 	- Both use different benchmarks for performance
 	- Essentially what's new here is the researchers for the chain-of-though paper enhance the example provided in the few-shot prompting case to push the model to perform additional natural language computation on building a chain of thought before arriving at an answer.
 	- Through ablation studies, the researchers showed that it isn't just providing examples, or pushing the language model to spend more intermediate tokens in its computation, that improves performance.
