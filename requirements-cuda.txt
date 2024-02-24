@@ -6,3 +6,4 @@ torchaudio -i https://download.pytorch.org/whl/cu118
 ipywidgets
 evaluate
 scikit-learn
+matplotlib

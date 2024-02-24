@@ -6,3 +6,4 @@ torchaudio
 ipywidgets
 evaluate
 scikit-learn
+matplotlib
