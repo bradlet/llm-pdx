@@ -8,3 +8,4 @@ evaluate
 scikit-learn
 matplotlib
 huggingface_hub[cli]
+accelerate
