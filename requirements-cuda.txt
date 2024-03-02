@@ -9,4 +9,4 @@ scikit-learn
 matplotlib
 huggingface_hub[cli]
 accelerate
-bitsandbytes -i https://pypi.org/bitsandbytes
+bitsandbytes==0.42.0
